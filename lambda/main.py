@@ -29,7 +29,10 @@ def store_sent_email(username):
     with Connection:
         with Connection.cursor() as cursor:
             print("Connected to database")
-            cursor.execute("UPDATE " + db_table + " SET email_sent = CURRENT_TIMESTAMP, verify_email_sent = TRUE WHERE username = '" + username + "';")
+            query = "UPDATE " + db_table + " SET email_sent = CURRENT_TIMESTAMP, verify_email_sent = TRUE WHERE username = '" + username + "';"
+            print(query)
+            cursor.execute(query)
+            Connection.commit()
     print("Update query executed")
 
 def send_email(username):
