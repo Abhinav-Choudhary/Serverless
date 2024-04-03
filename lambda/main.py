@@ -8,8 +8,8 @@ import pymysql
 # SMTP environment variables
 smtp_host =  os.environ.get("SMTP_HOST") #"smtp.mailgun.org"
 smtp_port = os.environ.get("SMTP_PORT") #587 
-smtp_username = os.environ.get("SMTP_USERNAME") #postmaster@mail.choudhary-abhinav.me
-smtp_password = os.environ.get("SMTP_PASSWORD") #df156c1458e29cddb1bf9bed1fdef297-f68a26c9-5ba9a9f5
+smtp_username = os.environ.get("SMTP_USERNAME")
+smtp_password = os.environ.get("SMTP_PASSWORD")
 smtp_verification_link = os.environ.get("SMTP_VERIFICATION_LINK")
 smtp_from_email = os.environ.get("SMTP_FROM_EMAIL")
 # Db environment variables
