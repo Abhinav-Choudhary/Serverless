@@ -1,6 +1,14 @@
 # GCP (Google Cloud) Serverless Lambda Function
 This Lambda function is designed to handle events triggered by an GCP Pub/Sub topic. The primary purpose of this function is to process messages received from the GCP topic, retrieve username from message, sent verification email to user and update Cloud SQL database.
 
+# Linked Repositories
+Explore the 2 additional repositories that complement this project, housing code for the REST-based CRUD operations APIs (Webapp) crafted in Java Enterprise Edition (J2EE), and the Infrastructure as Code (IaC) crafted in Terraform. 
+<br>
+[Webapp](https://github.com/Abhinav-Choudhary/Webapp)
+<br>
+[Infrastructure as Code](https://github.com/Abhinav-Choudhary/Terraform-GCP-Infrastructure)
+<br>
+
 # Functionality
 This function performs following tasks:
 - Retrieve base64 decoded body from GCP topic
